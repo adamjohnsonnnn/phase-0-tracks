@@ -13,3 +13,7 @@
 .accomplishments {
 	font-size: .8em;
 }
+
+h3:hover {
+	color: orange;
+}
