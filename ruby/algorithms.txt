@@ -1,3 +1,5 @@
+
+Robot Elevator Task
 - What floor are you on? 
 - What floor would you like to go to? 
 - If the floor you would like to go to is greater than the floor you are on press the up arrow.
@@ -6,3 +8,14 @@
 - Once you are in the elevator, select the floor you would like to go to.
 - Wait until the door opens on the floor you would like to go to. 
 - Exit the elevator.
+
+
+Brush My Teeth Algorithm
+- Enter bathroom
+- Grab toothbrush with left pinky and ring finger
+- Take top off Toothpaste using right hand, left thumd, and left ring finger 
+- Squeeze toothpaste on the toothbrush bristels
+- Run head of the toothbrush under he water
+- Gently brush teeth in a round motion until all teeth have been brushed
+- Rinse toothbrush under water until all toothpaste is cleaned away
+- Put all items used back where they were found
