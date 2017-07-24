@@ -27,6 +27,17 @@ garlic_bread = gets.chomp
 puts "Would you like health insurance? (yes/no)"
 health_insurance = gets.chomp
 
+#Ask for allegeries
+loop do
+	puts "What allergies do you have? (type 'done' when finished)"
+	allergy = gets.chomp
+	if allergy == "done"
+		break
+	elsif allergy == "sunshine"
+		abort ("Probably a vampire")
+	end
+end
+
 
 #Did they know their age correctly
 if 2017 == age + birth_year
