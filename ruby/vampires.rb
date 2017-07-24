@@ -1,3 +1,9 @@
+#Employee Numer
+puts "How many employees are being processed today?"
+number_employees = gets.to_i
+
+number_employees.times do
+
 # Werewolf, Inc. 
 #Checking Name
 puts "What is your name?"
@@ -45,7 +51,9 @@ else
 end
 
 #Are they a vampire
-if applicant_name == "Drake Cula" || "Tu Fang"
+if applicant_name == "Drake Cula" 
+	puts "You are definitely a vampire"
+elsif applicant_name == "Tu Fang" 
 	puts "You are definitely a vampire"
 elsif proper_age && (garlic_bread || health_insurance) == true
 	puts "You are probably not a vampire"
@@ -57,5 +65,6 @@ else
 	puts "Inconclusive"
 end
 
+end
 
 
