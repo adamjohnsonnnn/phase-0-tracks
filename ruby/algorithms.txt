@@ -1,0 +1,8 @@
+- What floor are you on? 
+- What floor would you like to go to? 
+- If the floor you would like to go to is greater than the floor you are on press the up arrow.
+- ElsIf the floor you would like to go to is less than the floor you are on then press the down arrow. 
+- When the Elevator door opens, enter the elevator.
+- Once you are in the elevator, select the floor you would like to go to.
+- Wait until the door opens on the floor you would like to go to. 
+- Exit the elevator.
