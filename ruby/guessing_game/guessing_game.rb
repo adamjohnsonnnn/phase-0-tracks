@@ -39,7 +39,6 @@ if hint_array.include?(letter) == true
 	puts "Your pick was wrong."
 end
 
-p hint_array
 
 i = 0
 while i <= new_game.guesses
@@ -51,7 +50,6 @@ if hint_array.include?(letter) == true
 	puts "That letter is wrong."
 end
 	hint_array.delete(letter)
-	p hint_array
 if hint_array.empty? == true
 	puts "You guessed the word! The word was #{new_game.answer}!"
 end
