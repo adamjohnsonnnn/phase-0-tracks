@@ -1,4 +1,6 @@
 class Santa
+attr_reader :age, :ethnicity
+attr_accessor :gender_change, :reindeer_array
 
 	def initialize(gender,ethnicity,age)
 		puts "Santa Claus is back in town!"
@@ -22,15 +24,12 @@ class Santa
 
 	def ethnicity(ethnicity)
 		puts "Santa is #{ethnicity}!"
+		@ethnicity
 	end
 
 	def ranking 
 		puts "Santa's favorite reindeer in order are:"
 		puts @reindeer_array
-	end
-
-	def age
-		@age
 	end
 
 	def birthday
@@ -47,10 +46,6 @@ class Santa
 
 	def gender_change=(new_gender)
 		@gender_change = new_gender
-	end
-
-	def gender_change
-		@gender_change
 	end
 
 end
@@ -74,3 +69,20 @@ claus.get_mad("Vixen")
 
 claus.gender_change = "Gifty-Givey"
 puts "Santa is now a #{claus.gender_change}!"
+
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+
+santa_array = []
+
+i=0
+while i<140
+	gender_random = example_genders.sample 
+	ethnicity_random = example_ethnicities.sample
+	age_random = rand(140)
+	santa_array << Santa.new(gender_random, ethnicity_random, age_random)
+	i += 1
+end
+
+p santa_array
+
