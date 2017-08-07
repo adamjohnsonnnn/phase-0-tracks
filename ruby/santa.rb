@@ -1,7 +1,8 @@
 class Santa
 
-	def initialize
+	def initialize(gender)
 		puts "Santa Claus is back in town!"
+		@gender = gender
 	end
 
 	def speak
@@ -12,10 +13,16 @@ class Santa
 		puts "That was a good #{cookie}"
 	end
 
+	def gender(gender)
+		puts "Santa is a #{gender}."
+	end
+
 end
 
-claus = Santa.new
+claus = Santa.new("woman")
 
 claus.speak
 
 claus.eat_milk_and_cookies("snickerdoodle")
+
+claus.gender("woman")
