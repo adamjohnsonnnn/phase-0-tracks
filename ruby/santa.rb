@@ -1,9 +1,9 @@
 class Santa
 
-	def initialize(gender)
+	def initialize(gender,ethnicity)
 		puts "Santa Claus is back in town!"
 		@gender = gender
-		@ethnicity = "North Polese"
+		@ethnicity = ethnicity
 	end
 
 	def speak
@@ -22,9 +22,19 @@ class Santa
 		puts "Santa is #{ethnicity}!"
 	end
 
+	def ranking 
+		puts "Santa's favorite reindeer in order are:"
+		reindeer_array = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+		puts reindeer_array
+	end
+
+	def age(number=0)
+		puts "Santa is #{number} years old."
+	end
+
 end
 
-claus = Santa.new("woman")
+claus = Santa.new("woman", "North Polese")
 
 claus.speak
 
@@ -33,3 +43,8 @@ claus.eat_milk_and_cookies("snickerdoodle")
 claus.gender("woman")
 
 claus.ethnicity("North Polese")
+
+claus.ranking
+
+claus.age(50)
+
