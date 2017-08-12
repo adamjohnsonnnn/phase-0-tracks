@@ -105,3 +105,18 @@ VirusPredictor.generate_report(STATE_DATA)
 
 #=======================================================================
 # Reflection Section
+
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+# The => syntax allows the data to have spaces which is good for named data such as states like 'New York'. This is not possible with the ':' syntax because it does not allow for space between words in the key
+
+# What does require_relative do? How is it different from require?
+# require_relative allows you to reference another file without the path and without the file extension by calling a file within the same folder and with the same file type. 'require' must use the file path and reference the file type as I updated in this code above 
+
+# What are some ways to iterate through a hash?
+# each is the wasy that we did so in this code. 'map' is another way to iterate through a hash.
+
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+# they used global variables that were extraneous 
+
+# What concept did you most solidify in this challenge?
+# I am getting much more confident with classes and how to work through them, building methods and then call those methods from within or outside the class. There is still a lot of work to be done, but that is beginning to come inot more focus for me.
