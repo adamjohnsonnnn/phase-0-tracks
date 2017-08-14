@@ -22,3 +22,15 @@ function add_horse(name) {
 add_horse("Bonzo");
 console.log(horse_array);
 
+// add horse and color to an object with horse name as key and color as the value
+
+function create_object(name_input, color_input) {
+	color_list = {};
+	for (var i = 0; i < name_input.length; i++) {
+		color_list[name_input[i]] = color_input[i];
+	}
+	console.log(color_list)
+}
+
+create_object(horse_array, color_array);
+
