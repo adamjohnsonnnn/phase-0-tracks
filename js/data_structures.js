@@ -34,3 +34,29 @@ function create_object(name_input, color_input) {
 
 create_object(horse_array, color_array);
 
+// create car assemmbly line
+// define empty warehouse (object) for storing cars
+
+
+// build factory line (function) to fill warehouse with cars
+// cars should be described by line, color, and horsepower
+var auto_line = ["El Diablo", "Vortex", "Nighthawk"]
+var auto_color = ["red", "black", "silver"]
+var auto_hp = [280, 340, 450]
+
+function factory_line(line, color, horsepower, number) {
+	var auto_object = {}; 
+	for (var i = 0; i <= number; i++) {
+		var rand_line = [];
+		var rand_color = [];
+		var rand_hp = [];
+	rand_line[i] = line[Math.floor(Math.random() * line.length)];
+	rand_color[i] = color[Math.floor(Math.random() *  color.length)];
+	rand_hp[i] = horsepower[Math.floor(Math.random() * horsepower.length)];
+		auto_object[rand_line[i]] = [rand_color[i], rand_hp[i]];
+	}
+	console.log(auto_object)
+}
+
+factory_line(auto_line, auto_color, auto_hp, 10); 
+
