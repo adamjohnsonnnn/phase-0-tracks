@@ -21,9 +21,20 @@ console.log(sort[0]);
 // define four objects with matching key, value, and no matches
 var first_object = {name: "Daenerys", height: 62, age: 30};
 var second_object = {name: "Tyrion" , gender: "male", scar: "yes"};
-var third_object  = {species: "Dragon", breathes: "fire", flies: "yes"};
-var fourth_object = {alive: "no", from: "the North", group: "Dead Army"};
+var third_object  = {species: "Dragon", breathes: "fire", scar: "yes"};
 
+function compare_objects(first_input, second_input) {
+	for(var key in first_input) {
+		if (key in second_input) {
+			if (first_input[key] == second_input[key]) {
+				return true;				
+			}
+			else {
+				return false;
+			}
+		}
+	}
+}
 
 
 
@@ -39,5 +50,10 @@ longest_word(test_array);
 test2_array = ["There is nothing", "either good", "or bad,", "but thinking makes it so."]
 
 longest_word(test2_array);
+
+// test code for object contains (compare_objects) function
+console.log(compare_objects(first_object, second_object));
+
+console.log(compare_objects(second_object, third_object));
 
 
