@@ -37,8 +37,6 @@ function compare_objects(first_input, second_input) {
 }
 
 
-
-
 // driver code
 // test longest_word function on multiple arrays
 longest_word(word_array);
