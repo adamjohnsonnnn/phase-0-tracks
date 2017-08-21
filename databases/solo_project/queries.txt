@@ -7,3 +7,5 @@ SELECT * FROM animals, species WHERE species.animal_id = animals.id;
 SELECT animals.type, species.name, species.length, species.predator FROM animals, species WHERE species.animal_id = animals.id;
 
 DELETE FROM species WHERE predator="false";
+
+SELECT animals.type, species.name, species.length FROM animals INNER JOIN species ON species.animal_id = animals.id;
