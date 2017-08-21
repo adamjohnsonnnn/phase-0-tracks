@@ -1,0 +1,5 @@
+SELECT businesses.name, reviews.stars, reviews.comment, users.first_name, users.last_name FROM reviews INNER JOIN users ON reviews.user_id = users.id INNER JOIN businesses ON reviews.business_id = businesses.id;
+
+SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment FROM users, businesses, reviews WHERE reviews.user_id = users.id AND reviews.business_id = businesses.id;
+
+SELECT * FROM users, reviews, businesses WHERE name="Sushi World" AND reviews.business_id = businesses.id AND reviews.user_id = users.id;
