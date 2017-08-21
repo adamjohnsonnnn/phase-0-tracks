@@ -1,0 +1,9 @@
+SELECT * FROM animals;
+
+UPDATE species SET length=80 WHERE name="horse";
+
+SELECT * FROM animals, species WHERE species.animal_id = animals.id;
+
+SELECT animals.type, species.name, species.length, species.predator FROM animals, species WHERE species.animal_id = animals.id;
+
+DELETE FROM species WHERE predator="false";
